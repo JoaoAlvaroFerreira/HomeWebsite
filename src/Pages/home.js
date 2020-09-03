@@ -3,6 +3,7 @@ import Navbar from './../Components/navbar';
 import MyCarousel from './../Components/carousel';
 
 
+
 class Home extends React.Component {
     render() {
         return(
