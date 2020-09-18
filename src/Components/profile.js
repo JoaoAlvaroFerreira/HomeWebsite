@@ -10,7 +10,7 @@ class Profile extends React.Component {
                 <div class="container">
                     <div class="row">
                         <div class="column">
-                        <img class="rounded-circle z-depth-2 mx-auto" style={{width:'60%'}} alt="profile picture" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
+                        <img class="rounded-circle z-depth-2 mx-auto" style={{width:'60%'}} alt="profile-pic" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
                         data-holder-rendered="true" />
                         </div>
                         <div class="column ml-5">
