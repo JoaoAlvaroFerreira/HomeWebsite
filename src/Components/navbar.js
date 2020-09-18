@@ -24,14 +24,14 @@ class Navbar extends React.Component {
                   <Link className="nav-link" href="/" to="/">Home</Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown
         </a>
                   <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <Link className="dropdown-item" to="/games">Games Developed</Link>
-                    <a className="dropdown-item" href="#">Another action</a>
+                    <a className="dropdown-item" href="/">Another action</a>
                     <div className="dropdown-divider"></div>
-                    <a className="dropdown-item" href="#">Something else here</a>
+                    <a className="dropdown-item" href="/">Something else here</a>
                   </div>
                 </li>
                 <li className="nav-item">
