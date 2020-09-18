@@ -6,30 +6,16 @@ import {
     Link
 } from "react-router-dom";
 import Home from './Pages/home';
+import Games from './Pages/games';
 
 
 export default function App() {
     return (
         <Router>
             <Switch>
-                <Route path="/about">
-                    <About />
-                </Route>
-                <Route path="/users">
-                    <Users />
-                </Route>
-                <Route path="/">
-                    <Home />
-                </Route>
+                <Route exact path={"/"} component={Home} />
+                <Route path="/games" component={Games} />
             </Switch>
         </Router>
     );
-}
-
-function About() {
-    return <h2>About</h2>;
-}
-
-function Users() {
-    return <h2>Users</h2>;
 }

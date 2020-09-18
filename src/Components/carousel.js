@@ -19,7 +19,7 @@ class MyCarousel extends React.Component {
                 play={true}
                 cancelOnInteraction={false}
                 cancelOnHover={false}
-                interval={1000}
+                interval={5000}
                 cssModule={AwesomeSliderStyles}
               >
                 <div data-src={image1} />
