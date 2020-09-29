@@ -9,6 +9,8 @@ class Games extends React.Component {
         <div>
         <Navbar/>
         lalalalala games here
+
+        https://youtu.be/82IT0EStqsk?t=8269
         </div>
         )
     }

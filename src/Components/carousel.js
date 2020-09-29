@@ -23,7 +23,7 @@ class MyCarousel extends React.Component {
                 cssModule={AwesomeSliderStyles}
               >
                 <div data-src={image1} />
-                <div data-src={image2} />
+               <div data-src={image2}/>
                 <div data-src={image3} />
               </AutoplaySlider>
    

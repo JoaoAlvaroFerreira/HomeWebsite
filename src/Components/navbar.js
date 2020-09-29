@@ -4,13 +4,15 @@ import {
   Link,
 } from "react-router-dom";
 
+import "../index.css";
+
 class Navbar extends React.Component {
   render() {
 
     return (
       <Router>
         <div>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
             <a className="navbar-brand" href="/" to="/">Home</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -27,7 +29,7 @@ class Navbar extends React.Component {
                   <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown
         </a>
-                  <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div className="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
                   <Link className="dropdown-item" to="/games">Games Developed</Link>
                     <a className="dropdown-item" href="/">Another action</a>
                     <div className="dropdown-divider"></div>
