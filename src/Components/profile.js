@@ -1,7 +1,7 @@
 import React from 'react';
 import pic from '../images/self.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -35,6 +35,7 @@ class Profile extends React.Component {
                    <a style={{color: "black", textDecoration: "none" }} href="https://github.com/JoaoAlvaroFerreira"> <div className="pl-2"><FontAwesomeIcon icon={faGithub} /> </div></a>
                    <a style={{color: "black", textDecoration: "none" }} href="https://www.instagram.com/joaoalvaroferreira/"> <div className="pl-2"><FontAwesomeIcon icon={faInstagram} /> </div></a>
                    <a style={{color: "black", textDecoration: "none" }} href="https://www.twitter.com/JoaoAlvaroCSF"> <div className="pl-2"><FontAwesomeIcon icon={faTwitter} /> </div></a>
+                   <a style={{color: "black", textDecoration: "none" }} href="https://www.linkedin.com/in/jo%C3%A3o-%C3%A1lvaro-ferreira-bb7996171/"> <div className="pl-2"><FontAwesomeIcon icon={faLinkedin} /> </div></a>
 
                     </div>
                 </div>
