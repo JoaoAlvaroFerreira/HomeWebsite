@@ -30,7 +30,7 @@ class Navbar extends React.Component {
 
                 <li className="nav-item">
                 <div class="dropdown">
-  <a className="nav-link" href="#" data-toggle="dropdown">Papers
+  <a className="nav-link" href="https://joaoalvaroferreira.netlify.app/" data-toggle="dropdown">Papers
   </a>
   <ul class="dropdown-menu">
   <div className = "dd">
