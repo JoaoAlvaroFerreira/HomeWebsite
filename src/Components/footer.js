@@ -8,7 +8,7 @@ class Footer extends React.Component {
             <footer class="page-footer font-small blue">
 
 
-                    <div class="footer-copyright text-center py-3">© 2020 Copyright: João Álvaro Ferreira
+                    <div class="footer-copyright text-center py-3">Developed by João Álvaro Ferreira
                     </div>
                       
 

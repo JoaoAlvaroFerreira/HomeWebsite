@@ -9,6 +9,10 @@ body, body *{
 
 }
 
+.container {
+  display: flex; /* or inline-flex */
+}
+
 h2{
   font-family: 'Secular One';
   font-weight: bold;
@@ -19,6 +23,7 @@ code {
     monospace;
 }
 
+
 @font-face {
   font-family: "Secular One";
   src: url("images/SecularOne-Regular.ttf");
@@ -27,11 +32,11 @@ code {
   url("images/secularone-regular-webfont.woff2") format("woff2"),
   }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 1500px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dd .nav-link  { color: rgb(102, 5, 5);  width: 300px; }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-  .navbar .nav-item .dropdown-menu{ margin-top:0; }
+  .navbar .nav-item .dropdown-menu{ margin-top:0;}
   .animate {
     animation-duration: 0.3s;
     -webkit-animation-duration: 0.3s;
@@ -73,4 +78,16 @@ code {
 .slideIn {
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
+}
+
+.card {
+  display: flex;
+  padding: 3vh 2vh 5vh 3vh;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  max-width: 60%;
+  max-height: 50%;
+
 }

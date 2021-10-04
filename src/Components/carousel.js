@@ -3,6 +3,7 @@ import AwesomeSlider from 'react-awesome-slider';
 import image1 from '../images/a.png';
 import image2 from '../images/b.png';
 import image3 from '../images/c.jpg';
+import image4 from '../images/monster.png';
 import '../slider.scss';
 
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
@@ -24,7 +25,9 @@ class MyCarousel extends React.Component {
               >
                 <div data-src={image1} />
                <div data-src={image2}/>
-                <div data-src={image3} />
+               <div data-src={image3} />
+               <div data-src={image4} />
+               
               </AutoplaySlider>
    
 

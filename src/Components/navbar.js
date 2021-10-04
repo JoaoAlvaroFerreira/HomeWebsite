@@ -22,13 +22,36 @@ class Navbar extends React.Component {
                 <li className="nav-item">
                   <a className="nav-link" href="https://laidbackstrat.itch.io/">Games Developed</a>
                 </li>
-                
+
                 <li className="nav-item">
-                <Link className="nav-link" to="./CV.pdf" target="_blank" download>Curriculum Vitae</Link>
-              
+                  <Link className="nav-link" to="./CV.pdf" target="_blank" download>Curriculum Vitae</Link>
+
+                </li>
+
+                <li className="nav-item">
+                <div class="dropdown">
+  <a className="nav-link" data-toggle="dropdown">Papers
+  </a>
+  <ul class="dropdown-menu">
+  <div className = "dd">
+  <li className="nav-item">
+                  <Link className="nav-link"  to="./Thesis.pdf" target="_blank" download>Master's Thesis - Injustice and Balance in Pervasive Games</Link>
+
+                </li>
+                </div>
+                <div className = "dd">
+                <li className="nav-item">
+                  <Link className="nav-link"  to="./GameAdaptivity.pdf" target="_blank" download>Exploring Multi-Output Regression and Reinforcement Learning for Game Adaptivity</Link>
+
+                </li></div>
+  </ul>
+</div>
+                 
+
                 </li>
 
               </ul>
+              
             </div>
           </nav>
 
