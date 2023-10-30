@@ -3,12 +3,58 @@ import feup from '../images/feup.jpg';
 import aws from '../images/aws.jpg';
 import cambridge from '../images/cambridge.png';
 import deloitte from '../images/deloitte.jfif';
+import miniclip from '../images/miniclip.png';
 import '../index.css';
 
 class Cards extends React.Component {
     render() {
         return (
             <div>
+                <div class="row">
+                    <h2 class="h2 mx-auto">Work Experience</h2>
+                </div>
+                <div class="row">
+                    <div class="card w-50 mx-auto bg-white ">
+                        <div class="row bg-white ">
+                            <div class="col-3 mr-2 bg-white">
+                                <img class="rounded mx-auto d-block mx-auto" style={{ width: '80%' }} alt="Miniclip logo" src={miniclip}
+                                    data-holder-rendered="true" />
+                            </div>
+
+                            <div class="col mr-2 bg-white"><b class="bg-white">Miniclip Portugal</b>
+                                <p class="bg-white">Software Developer - 8 Ball Pool</p>
+                                <p class="bg-white text-secondary">(2022 - Ongoing)</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card w-50 mx-auto bg-white ">
+                        <div class="row bg-white ">
+                            <div class="col-3 mr-2 bg-white">
+                                <img class="rounded mx-auto d-block mx-auto" style={{ width: '80%' }} alt="Deloitte logo" src={deloitte}
+                                    data-holder-rendered="true" />
+                            </div>
+
+                            <div class="col mr-2 bg-white"><b class="bg-white">Deloitte Digital Studio</b>
+                                <p class="bg-white">Tech Analyst - Front-End Development</p>
+                                <p class="bg-white text-secondary">(2021)</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card w-50 mx-auto bg-white ">
+                        <div class="row bg-white ">
+                            <div class="col-3 mr-2 bg-white">
+                                <img class="rounded mx-auto d-block mx-auto" style={{ width: '80%' }} alt="Deloitte logo" src={deloitte}
+                                    data-holder-rendered="true" />
+                            </div>
+
+                            <div class="col mr-2 bg-white"><b class="bg-white">Deloitte Digital Studio</b>
+                                <p class="bg-white">Internship - Mobile App Development</p>
+                                <p class="bg-white text-secondary">(2019)</p></div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class=" row">
                     <h2 class="h2 mx-auto">Education & Certifications</h2>
@@ -60,46 +106,6 @@ class Cards extends React.Component {
                         </div>
                     </div>
                 </div>
-
-                <div class=" row">
-                    <h2 class="h2 mx-auto">Work Experience</h2>
-                </div>
-                <div class="row">
-                    <div class="card w-50 mx-auto bg-white ">
-                        <div class="row bg-white ">
-                            <div class="col-3 mr-2 bg-white">
-                                <img class="rounded mx-auto d-block mx-auto" style={{ width: '80%' }} alt="Deloitte logo" src={deloitte}
-                                    data-holder-rendered="true" />
-                            </div>
-
-                            <div class="col mr-2 bg-white"><b class="bg-white">Deloitte Digital Studio</b>
-                                <p class="bg-white">Internship - Mobile App Development</p>
-                                <p class="bg-white text-secondary">(2019)</p></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="card w-50 mx-auto bg-white ">
-                        <div class="row bg-white ">
-                            <div class="col-3 mr-2 bg-white">
-                                <img class="rounded mx-auto d-block mx-auto" style={{ width: '80%' }} alt="Deloitte logo" src={deloitte}
-                                    data-holder-rendered="true" />
-                            </div>
-
-                            <div class="col mr-2 bg-white"><b class="bg-white">Deloitte Digital Studio</b>
-                                <p class="bg-white">Tech Analyst - Front-End Development</p>
-                                <p class="bg-white text-secondary">(2021 - Ongoing)</p></div>
-                        </div>
-                    </div>
-                </div>
-
-
-               
-
-
-
-
 
             </div>
 

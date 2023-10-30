@@ -11,7 +11,7 @@ class Navbar extends React.Component {
 
     return (
       <Router>
-        <div>
+        <div class='d-md-inline-flex ml-5'>
           <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
             <a className="navbar-brand" href="/" to="/">Home</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,41 +22,30 @@ class Navbar extends React.Component {
                 <li className="nav-item">
                   <a className="nav-link" href="https://laidbackstrat.itch.io/">Games Developed</a>
                 </li>
-
                 <li className="nav-item">
-                  <Link className="nav-link" to="./CV.pdf" target="_blank" download>Curriculum Vitae</Link>
-
+                  <Link className="nav-link" to="./CV2023.pdf" target="_blank" download>Curriculum Vitae</Link>
                 </li>
-
                 <li className="nav-item">
-                <div class="dropdown">
-  <a className="nav-link" href="https://joaoalvaroferreira.netlify.app/" data-toggle="dropdown">Papers
-  </a>
-  <ul class="dropdown-menu">
-  <div className = "dd">
-  <li className="nav-item">
-                  <Link className="nav-link"  to="./Thesis.pdf" target="_blank" download>Master's Thesis - Injustice and Balance in Pervasive Games</Link>
+                  <div class="dropdown">
+                    <a className="nav-link" href="https://joaoalvaroferreira.netlify.app/" data-toggle="dropdown">Papers
+                    </a>
+                    <ul class="dropdown-menu">
+                      <div className="dd">
+                        <li className="nav-item">
+                          <Link className="nav-link" to="./Thesis.pdf" target="_blank" download>Master's Thesis - Injustice and Balance in Pervasive Games</Link>
 
+                        </li>
+                      </div>
+                      <div className="dd">
+                        <li className="nav-item">
+                          <Link className="nav-link" to="./GameAdaptivity.pdf" target="_blank" download>Exploring Multi-Output Regression and Reinforcement Learning for Game Adaptivity</Link>
+                        </li></div>
+                    </ul>
+                  </div>
                 </li>
-                </div>
-                <div className = "dd">
-                <li className="nav-item">
-                  <Link className="nav-link"  to="./GameAdaptivity.pdf" target="_blank" download>Exploring Multi-Output Regression and Reinforcement Learning for Game Adaptivity</Link>
-
-                </li></div>
-  </ul>
-</div>
-                 
-
-                </li>
-
               </ul>
-              
             </div>
           </nav>
-
-
-
         </div>
       </Router>
     );

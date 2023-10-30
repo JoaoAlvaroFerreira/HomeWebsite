@@ -82,12 +82,11 @@ code {
 
 .card {
   display: flex;
-  padding: 3vh 2vh 5vh 3vh;
+  padding: 2vh 2vh 2vh 2vh;
   border: none;
   border-radius: 10px;
   margin-top: 1%;
   margin-bottom: 1%;
   max-width: 60%;
   max-height: 50%;
-
 }
