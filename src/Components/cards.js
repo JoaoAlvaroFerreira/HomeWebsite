@@ -11,7 +11,7 @@ class Cards extends React.Component {
         return (
             <div>
                 <div class="row">
-                    <h2 class="h2 ml-auto">Work Experience</h2>
+                    <h2 class="h2 mx-auto">Work Experience</h2>
                 </div>
                 <div class="row">
                     <div class="card w-50 mx-auto bg-white ">
