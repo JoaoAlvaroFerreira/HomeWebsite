@@ -6,110 +6,100 @@ import deloitte from '../images/deloitte.jfif';
 import miniclip from '../images/miniclip.png';
 import '../index.css';
 
-class Cards extends React.Component {
-    render() {
-        return (
+class Card extends React.Component{
+
+    constructor(props){
+        super(props);
+        this.title       = props.title
+        this.img_file    = props.img_file
+        this.img_alttext = props.img_alttext
+        this.description = props.description
+        this.time_period = props.time_period
+    }
+    render(){
+                return(        
+                <div class="row">
+                <div class="card w-50 mx-auto bg-white ">
+                    <div class="row bg-white ">
+                        <div class="col-3 mr-2 bg-white">
+                            <img class="rounded mx-auto d-block mx-auto" style={{ width: '80%' }} alt={this.img_alttext} src={this.img_file}
+                                data-holder-rendered="true" />
+                        </div>
+                        <div class="col mr-2 bg-white"><b class="bg-white">{this.title}</b>
+                            <p class="bg-white">{this.description}</p>
+                            <p class="bg-white text-secondary">{this.time_period}</p></div>
+                    </div>
+                </div>
+            </div>
+            )
+    }
+}
+
+class CardSection extends React.Component{
+
+    constructor(props){
+        super(props);
+        this.section_title = props.section_title
+        this.cards_list    = props.cards_list
+    }
+
+    render(){
+        return(
             <div>
                 <div class="row">
-                    <h2 class="h2 mx-auto">Work Experience</h2>
+                    <h2 class="h2 mx-auto">{this.section_title}</h2>
                 </div>
-                <div class="row">
-                    <div class="card w-50 mx-auto bg-white ">
-                        <div class="row bg-white ">
-                            <div class="col-3 mr-2 bg-white">
-                                <img class="rounded mx-auto d-block mx-auto" style={{ width: '80%' }} alt="Miniclip logo" src={miniclip}
-                                    data-holder-rendered="true" />
-                            </div>
-
-                            <div class="col mr-2 bg-white"><b class="bg-white">Miniclip Portugal</b>
-                                <p class="bg-white">Software Developer - 8 Ball Pool</p>
-                                <p class="bg-white text-secondary">(2022 - Ongoing)</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="card w-50 mx-auto bg-white ">
-                        <div class="row bg-white ">
-                            <div class="col-3 mr-2 bg-white">
-                                <img class="rounded mx-auto d-block mx-auto" style={{ width: '80%' }} alt="Deloitte logo" src={deloitte}
-                                    data-holder-rendered="true" />
-                            </div>
-
-                            <div class="col mr-2 bg-white"><b class="bg-white">Deloitte Digital Studio</b>
-                                <p class="bg-white">Tech Analyst - Front-End Development</p>
-                                <p class="bg-white text-secondary">(2021)</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="card w-50 mx-auto bg-white ">
-                        <div class="row bg-white ">
-                            <div class="col-3 mr-2 bg-white">
-                                <img class="rounded mx-auto d-block mx-auto" style={{ width: '80%' }} alt="Deloitte logo" src={deloitte}
-                                    data-holder-rendered="true" />
-                            </div>
-
-                            <div class="col mr-2 bg-white"><b class="bg-white">Deloitte Digital Studio</b>
-                                <p class="bg-white">Internship - Mobile App Development</p>
-                                <p class="bg-white text-secondary">(2019)</p></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=" row">
-                    <h2 class="h2 mx-auto">Education & Certifications</h2>
-                </div>
-
-                <div class="row">
-                    <div class="card w-50 mx-auto bg-white ">
-                        <div class="row bg-white ">
-                            <div class="col-3 mr-2 bg-white">
-                                <img class="rounded mx-auto d-block mx-auto" style={{ width: '120%' }} alt="feup logo" src={feup}
-                                    data-holder-rendered="true" />
-                            </div>
-
-                            <div class="col mr-2 bg-white"><b class="bg-white">Faculdade de Engenharia da Universidade do Porto</b>
-                                <p class="bg-white">Integrated Masters in Computer Engineering</p>
-                                <p class="bg-white text-secondary">(2016-2021)</p></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="card w-50 mx-auto bg-white ">
-                        <div class="row bg-white ">
-                            <div class="col-3 mr-2 bg-white">
-                                <img class="rounded mx-auto d-block bg-white" style={{ width: '60%' }} alt="cambridge logo" src={cambridge}
-                                    data-holder-rendered="true" />
-                            </div>
-
-                            <div class="col mr-2 bg-white"><b class="bg-white">Cambridge Assessment English</b>
-                                <p class="bg-white">Cambridge English Proficiency (C2 Level)</p>
-                                <p class="bg-white text-secondary">(2016)</p></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="card w-50 mx-auto bg-white ">
-                        <div class="row bg-white ">
-                            <div class="col-3 mr-2 bg-white">
-                                <img class="rounded mx-auto d-block" style={{ width: '60%' }} alt="AWS logo" src={aws}
-                                    data-holder-rendered="true" />
-                            </div>
-
-                            <div class="col mr-2 bg-white"><b class="bg-white">Amazon Web Services AWS</b>
-                                <p class="bg-white">AWS Certified Cloud Practitioner</p>
-                                <p class="bg-white text-secondary">(2021)</p></div>
-                        </div>
-                    </div>
-                </div>
-
+                {this.cards_list}
             </div>
-
         )
+    }
+}
+
+class Cards extends React.Component {
+    render() {
+        let workMiniclip = <Card title      = "Miniclip Portugal" 
+                                img_alttext = "Miniclip logo" 
+                                img_file    = {miniclip} 
+                                description = "Software Developer - 8 Ball Pool"
+                                time_period = "(2022 - Ongoing)"/>
+        
+        let workDeloitte = <Card title      = "Deloitte Digital Studio" 
+                                img_alttext = "Deloitte logo" 
+                                img_file    = {deloitte} 
+                                description = "Tech Analyst"
+                                time_period = "(2021)"/>
+        
+        let intDeloitte  = <Card title      = "Deloitte Digital Studio" 
+                                img_alttext = "Deloitte logo" 
+                                img_file    = {deloitte} 
+                                description = "Internship - Mobile App Development"
+                                time_period = "(2019)"/>
+
+        let studyFEUP    = <Card title      = "Faculdade de Engenharia da Universidade do Porto" 
+                                img_alttext = "FEUP logo" 
+                                img_file    = {feup} 
+                                description = "Integrated Masters in Computer Engineering"
+                                time_period = "(2016 - 2021)"/>
+        
+        let certCambridge = <Card title     = "Cambridge Assessment English" 
+                                img_alttext = "Cambridge logo" 
+                                img_file    = {cambridge} 
+                                description = "Cambridge English Proficiency (C2 Level)"
+                                time_period = "(2016)"/>
+        
+        let certAWS      = <Card title      = "Amazon Web Services" 
+                                img_alttext = "Amazon logo" 
+                                img_file    = {aws} 
+                                description = "AWS Certified Cloud Practitioner"
+                                time_period = "(2021)"/>
+
+        let sectionWork  = <CardSection section_title = "Work Experience" cards_list = {[workMiniclip, workDeloitte, intDeloitte]}/>
+        let sectionStudy = <CardSection section_title = "Education & Certifications" cards_list = {[studyFEUP, certCambridge, certAWS]}/>
+        
+        return (
+                <div>{sectionWork}
+                     {sectionStudy}</div>
+                )        
     }
 }
 

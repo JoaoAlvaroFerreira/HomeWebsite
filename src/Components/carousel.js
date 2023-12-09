@@ -16,13 +16,11 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 class MyCarousel extends React.Component {
     render() {
         return (
-           
-           
               <AutoplaySlider
                 play={true}
                 cancelOnInteraction={false}
                 cancelOnHover={false}
-                interval={4000}
+                interval={5000}
                 cssModule={AwesomeSliderStyles}>
 
                <div data-src={image1} />
@@ -33,8 +31,6 @@ class MyCarousel extends React.Component {
                <div data-src={image6} />
                
               </AutoplaySlider>
-   
-
         )
     }
 }
