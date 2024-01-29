@@ -23,7 +23,7 @@ class Navbar extends React.Component {
                   <a className="nav-link" href="https://laidbackstrat.itch.io/">Games Developed</a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="./CV2023.pdf" target="_blank" download>Curriculum Vitae</Link>
+                  <Link className="nav-link" to="./JoaoAlvaroFerreira.pdf" target="_blank" download>Curriculum Vitae</Link>
                 </li>
                 <li className="nav-item">
                   <div class="dropdown">
