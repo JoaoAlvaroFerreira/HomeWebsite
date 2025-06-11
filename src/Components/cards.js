@@ -4,6 +4,7 @@ import aws from '../images/aws.jpg';
 import cambridge from '../images/cambridge.png';
 import deloitte from '../images/deloitte.jfif';
 import miniclip from '../images/miniclip.png';
+import korber from '../images/korber.png';
 import '../index.css';
 
 class Card extends React.Component{
@@ -57,11 +58,17 @@ class CardSection extends React.Component{
 
 class Cards extends React.Component {
     render() {
+        let workKorber = <Card title      = "Körber Supply Chain" 
+                                img_alttext = "Korber logo" 
+                                img_file    = {korber} 
+                                description = "Full Stack Developer - Predictive Maintenance"
+                                time_period = "(2024-2025)"/>
+
         let workMiniclip = <Card title      = "Miniclip Portugal" 
                                 img_alttext = "Miniclip logo" 
                                 img_file    = {miniclip} 
                                 description = "Software Developer - 8 Ball Pool"
-                                time_period = "(2022 - Ongoing)"/>
+                                time_period = "(2022 - 2024)"/>
         
         let workDeloitte = <Card title      = "Deloitte Digital Studio" 
                                 img_alttext = "Deloitte logo" 
@@ -93,7 +100,7 @@ class Cards extends React.Component {
                                 description = "AWS Certified Cloud Practitioner"
                                 time_period = "(2021)"/>
 
-        let sectionWork  = <CardSection section_title = "Work Experience" cards_list = {[workMiniclip, workDeloitte, intDeloitte]}/>
+        let sectionWork  = <CardSection section_title = "Work Experience" cards_list = {[workKorber, workMiniclip, workDeloitte, intDeloitte]}/>
         let sectionStudy = <CardSection section_title = "Education & Certifications" cards_list = {[studyFEUP, certCambridge, certAWS]}/>
         
         return (
