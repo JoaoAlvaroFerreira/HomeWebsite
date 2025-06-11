@@ -25,10 +25,10 @@ class Profile extends React.Component {
                                 <div class="row">
                                     <h2 class="h2">João Álvaro Ferreira</h2></div>
                                 <div class="row">
-                                    João Álvaro Ferreira is a Software Developer at Miniclip, working on 8 Ball Pool. João graduated with an Integrated Masters in Computer Engineering from FEUP, developing a master's thesis consisting of scientific research into location-based games, relying on machine learning techniques.
+                                    João Álvaro Ferreira is a Software Developer at Körber Supply Chain. João graduated with an Integrated Masters in Computer Engineering from FEUP, developing a master's thesis consisting of scientific research into location-based games, relying on machine learning techniques.
                                     <br></br>
                                     <br></br>
-                                    Currently working in LiveOps and feature development for 8 Ball Pool, the focus of his work is currently on data management tools and mobile app development. João is experienced in this area, having worked on video games, 3D modeling and virtual reality/augmented reality applications.
+                                    Currently working in the Predictive Maintenance team at Körber, the focus of his work is currently on developing custom web tools for industrial infrastructure. In his spare time, João also works on video game development, an area he's experienced in, having worked in mobile games, 3D modeling and virtual reality/augmented reality applications.
                                 </div>
                             </div>
                         </div>
